@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts and Culture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .carousel-images {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exploring Arts and Culture</h1>
+        <p>Discover the beauty and creativity of different cultures through art.</p>
+    </header>
+
+    <section>
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="art pic 1.jpg" alt="Art Piece 1">
+                <img src="art pic 2.jpg" alt="Art Piece 2">
+                <img src="art pic 3.jpg" alt="Art Piece 3">
+                <img src="art pic 4.jpg" alt="Art Piece 4">
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" id="prevBtn">&#10094;</button>
+                <button class="carousel-button" id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Arts and Culture | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+        const prevButton = document.getElementById('prevBtn');
+        const nextButton = document.getElementById('nextBtn');
+
+        function showImage(index) {
+            const offset = -index * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        }, 3000); // Auto-slide every 3 seconds
+    </script>
+
+</body>
+</html>
