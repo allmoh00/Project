@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Tanzania: Tourist Places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+            line-height: 1.6;
+        }
+        header {
+            background: #008080;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .tourist-place {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tourist-place h3 {
+            text-align: center;
+            color: #008080;
+        }
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-images img {
+            max-width: 100%;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .carousel-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        footer {
+            background: #004d4d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        h4 {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Discover Tanzania: Art, Culture, and Tourism</h1>
+</header>
+<nav>
+    <a href="tourist place.html">Back to Tourist Plcae</a>
+</nav>
+<main>
+    <div class="tourist-place">
+        <h3>1. Serengeti</h3>
+        <h4>The Experience of Serengeti</h4>
+        <div class="carousel-container">
+            <div class="carousel-images" id="serengeti-carousel">
+                <img class="carousel-slide" src="serengeti pic1.jpg" alt="Serengeti National Park">
+                <img class="carousel-slide" src="serengeti pic2.jpg" alt="Serengeti National Park">
+                <img class="carousel-slide" src="serengeti pic3.jpg" alt="Serengeti National Park">
+                <img class="carousel-slide" src="serengeti pic4.jpg" alt="Ngorongoro Crater">
+                <img class="carousel-slide" src="serengeti pic5.jpg" alt="Ngorongoro Crater">
+                <img class="carousel-slide" src="serengeti pic 6.jpg" alt="Ngorongoro Crater">
+                <img class="carousel-slide" src="serengeti pic 7.jpg" alt="Ngorongoro Crater">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="previousSlide('serengeti-carousel')">&lt;</button>
+                <button onclick="nextSlide('serengeti-carousel')">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tourist-place">
+        <h3>2. The Experince of Mount Kilimanjaro</h3>
+        <h4>The history of Mount Kilimanjaro</h4>
+        <p>Mount Kilimanjaro’s three peaks were formed after volcanic eruptions millions of years ago...</p>
+        <div class="carousel-container">
+            <div class="carousel-images" id="kilimanjaro-carousel">
+                <img class="carousel-slide" src="kill pic1.jfif" alt="Mount Kilimanjaro">
+                <img class="carousel-slide" src="kill pic2.jfif" alt="Mount Kilimanjaro">
+                <img class="carousel-slide" src="kill pic3.jfif" alt="Mount Kilimanjaro">
+                <img class="carousel-slide" src="kill pic4.jfif" alt="Ngorongoro Crater">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="previousSlide('kilimanjaro-carousel')">&lt;</button>
+                <button onclick="nextSlide('kilimanjaro-carousel')">&gt;</button>
+            </div>
+        </div>
+        <h4>The Experience of Kilimanjaro National Park</h4>
+        <p>At 5,895 m, Kilimanjaro is the highest point in Africa...</p>
+    </div>
+
+    <div class="tourist-place">
+        <h3>3. Zanzibar</h3>
+        <h4>The Experience of Zanzibar</h4>
+        <p>Zanzibar is the home of idyllic beaches, balmy weather, and warm tropical waters...</p>
+        <div class="carousel-container">
+            <div class="carousel-images" id="zanzibar-carousel">
+                <img class="carousel-slide" src="zanzibar pic1.webp" alt="Zanzibar Beach">
+                <img class="carousel-slide" src="zanzibar pic2.jpg" alt="Zanzibar Beach">
+                <img class="carousel-slide" src="zanzibar pc3.jpg" alt="Stone Town of Zanzibar">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="previousSlide('zanzibar-carousel')">&lt;</button>
+                <button onclick="nextSlide('zanzibar-carousel')">&gt;</button>
+            </div>
+        </div>
+        <h4>Beach & Marine Life</h4>
+        <p>The beaches of Zanzibar are a wonder to behold...</p>
+    </div>
+
+    <div class="tourist-place">
+        <h3>4. Ngorongoro Crater</h3>
+        <h4>The Experience Ngorongoro Area</h4>
+        <div class="carousel-container">
+            <div class="carousel-images" id="ngorongoro-carousel">
+                <img class="carousel-slide" src="ngorongoro pic1.jfif" alt="Ngorongoro Crater">
+                <img class="carousel-slide" src="ngorongoro pic2.jfif" alt="Ngorongoro Crater">
+                <img class="carousel-slide" src="ngorongoro pic3.jfif" alt="Ngorongoro Crater">
+                <img class="carousel-slide" src="ngorongoro pic4.jpg" alt="Ngorongoro Crater">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="previousSlide('ngorongoro-carousel')">&lt;</button>
+                <button onclick="nextSlide('ngorongoro-carousel')">&gt;</button>
+            </div>
+        </div>
+        <h4>What is so special about the Ngorongoro Crater?</h4>
+        <p>Other than being the biggest intact volcanic caldera on Earth...</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Discover Tanzania</p>
+</footer>
+
+<script>
+function previousSlide(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const activeIndex = Math.abs(parseInt(carousel.style.transform.replace('translateX(', '').replace('%', '')) || 0) / 100 || 0;
+
+    const prevIndex = (activeIndex - 1 + slides.length) % slides.length;
+    carousel.style.transform = `translateX(-${prevIndex * 100}%)`;
+}
+
+function nextSlide(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const activeIndex = Math.abs(parseInt(carousel.style.transform.replace('translateX(', '').replace('%', '')) || 0) / 100 || 0;
+
+    const nextIndex = (activeIndex + 1) % slides.length;
+    carousel.style.transform = `translateX(-${nextIndex * 100}%)`;
+}
+</script>
+</body>
+</html>
