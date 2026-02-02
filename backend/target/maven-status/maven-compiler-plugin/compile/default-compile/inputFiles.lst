@@ -1,0 +1,15 @@
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/DiscoverTanzaniaApplication.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/config/WebConfig.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/contact/ContactController.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/contact/ContactMessage.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/contact/ContactMessageRepository.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/contact/dto/ContactDtos.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/place/Place.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/place/PlaceController.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/place/PlaceImage.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/place/PlaceRepository.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/place/dto/PlaceDtos.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/team/TeamController.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/team/TeamMember.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/team/TeamMemberRepository.java
+/home/egovridc/Project-new/backend/src/main/java/com/example/discovertanzania/team/dto/TeamDtos.java

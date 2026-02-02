@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: discover-tanzania
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/discover_tanzania}
+    username: ${DB_USER:dt_user}
+    password: ${DB_PASSWORD:dt_pass}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: INFO
+
